@@ -8,7 +8,7 @@
 *   { name: 'Moldova', population: 3 500 000},
 *   { name: 'Switzerland', population: 8 400 000}
 * ]
-* 
+*
 * Total population = 42M + 9.5M + 3.5M + 8.4M = 63.4M
 */
 function calculateCountriesPopulation(countries) {
@@ -18,7 +18,7 @@ function calculateCountriesPopulation(countries) {
   return 0;
   } else {
   for (let i=0; i<countries.length; i++) {
-  sum += countries[i].population;
+  sum += parseFloat(countries[i].population, 10);
   }
   return sum;
   }
