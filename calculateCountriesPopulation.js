@@ -18,7 +18,7 @@ function calculateCountriesPopulation(countries) {
   return 0;
   } else {
   for (let i=0; i<countries.length; i++) {
-  sum += parseFloat(countries[i].population);
+  sum = (sum*100000 + parseFloat(countries[i].population)*100000)/100000;
   }
   return sum;
   }
